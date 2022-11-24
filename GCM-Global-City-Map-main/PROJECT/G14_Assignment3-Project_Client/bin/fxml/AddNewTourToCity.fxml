@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="650.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiControllers.AddNewTourToCityControllers">
+   <children>
+      <AnchorPane prefHeight="650.0" prefWidth="815.0">
+         <children>
+            <ImageView fitHeight="650.0" fitWidth="871.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/All pictures/rsz_whatsapp_image_2019-05-04_at_154206.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="283.0" layoutY="1.0" prefHeight="56.0" prefWidth="287.0" text="Global City Map System" textFill="#0006b5">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Pane layoutY="72.0" prefHeight="322.0" prefWidth="781.0">
+               <children>
+                  <Label layoutX="12.0" layoutY="25.0" prefHeight="38.0" prefWidth="312.0" text="Create tour" textFill="#0006b5">
+                     <font>
+                        <Font name="Bell MT Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="name_of_tour_Txt" layoutX="686.0" layoutY="121.0" prefHeight="25.0" prefWidth="150.0" />
+                  <ImageView fx:id="image_gcm_content_manger" fitHeight="97.0" fitWidth="110.0" layoutX="6.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="/All pictures/9d088af39c.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="594.0" layoutY="125.0" text="Tour name:" />
+                  <Separator layoutX="-1.0" layoutY="5.0" prefHeight="3.0" prefWidth="850.0" style="-fx-background-color: #000000;" />
+                  <Label layoutX="134.0" layoutY="110.0" text="Country:" />
+                  <ComboBox fx:id="CountryCbx" layoutX="221.0" layoutY="108.0" prefWidth="150.0" promptText="select country" />
+                  <ComboBox fx:id="CityCbx" layoutX="221.0" layoutY="154.0" prefWidth="150.0" promptText="select city" />
+                  <Label layoutX="145.0" layoutY="156.0" text="City:" />
+                  <Label layoutX="558.0" layoutY="171.0" text="Recommended time:" />
+                  <Label layoutX="12.0" layoutY="227.0" prefHeight="25.0" prefWidth="345.0" text="Add places of interest" textFill="#b20000">
+                     <font>
+                        <Font name="Bell MT Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="19.0" layoutY="276.0" text="Place name:" />
+                  <ComboBox fx:id="NameCbx" layoutX="106.0" layoutY="271.0" prefHeight="25.0" prefWidth="150.0" promptText="Select name" />
+                  <Label layoutX="592.0" layoutY="259.0" text="Description:" />
+                  <Separator layoutX="-1.0" layoutY="205.0" prefHeight="1.0" prefWidth="556.0" style="-fx-background-color: #000000;" />
+                  <ImageView fitHeight="30.0" fitWidth="31.0" layoutX="512.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/All pictures/56735.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="30.0" fitWidth="31.0" layoutX="512.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/All pictures/56587.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="607.0" layoutY="76.0" prefHeight="26.0" prefWidth="199.0" text="Tour information" textFill="#b20000">
+                     <font>
+                        <Font name="Bell MT Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="19.0" layoutY="327.0" text="Visit order:" />
+                  <TextField fx:id="orderTxt" layoutX="94.0" layoutY="319.0" prefHeight="25.0" prefWidth="30.0" />
+                  <TextArea fx:id="timeArea" layoutX="686.0" layoutY="167.0" prefHeight="77.0" prefWidth="150.0" />
+                  <TextArea fx:id="descArea" layoutX="687.0" layoutY="254.0" prefHeight="88.0" prefWidth="150.0" />
+                  <ImageView fx:id="gcm_manager" fitHeight="97.0" fitWidth="110.0" layoutX="6.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="/All pictures/69636.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="image_content_emp" fitHeight="97.0" fitWidth="110.0" layoutX="6.0" layoutY="68.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="/All pictures/51-512.png" />
+                     </image>
+                  </ImageView>
+                  <Separator layoutX="359.0" layoutY="202.0" prefHeight="3.0" prefWidth="395.0" rotate="90.0" style="-fx-background-color: #000000;" />
+                  <ImageView fitHeight="9.0" fitWidth="14.0" layoutX="210.0" layoutY="114.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/All pictures/d7e213ad9c.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="9.0" fitWidth="14.0" layoutX="210.0" layoutY="163.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/All pictures/d7e213ad9c.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="9.0" fitWidth="14.0" layoutX="94.0" layoutY="280.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/All pictures/d7e213ad9c.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="9.0" fitWidth="14.0" layoutX="673.0" layoutY="129.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/All pictures/d7e213ad9c.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="9.0" fitWidth="14.0" layoutX="673.0" layoutY="175.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/All pictures/d7e213ad9c.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="9.0" fitWidth="14.0" layoutX="673.0" layoutY="263.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/All pictures/d7e213ad9c.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <ImageView fitHeight="44.0" fitWidth="149.0" layoutX="707.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/All pictures/rsz_gcm_logo_lightbg.png" />
+               </image>
+            </ImageView>
+            <HBox fx:id="TabMenu" alignment="CENTER_LEFT" layoutY="66.0" prefHeight="38.0" prefWidth="850.0" style="-fx-background-color: #f0f0f0; -fx-border-color: black;" visible="false">
+               <children>
+                  <Button fx:id="btnView_Catalg" mnemonicParsing="false" onMouseClicked="#OnClick_View_Catalg" onMouseEntered="#mouse_hover" onMouseExited="#mouse_exit" prefHeight="0.0" prefWidth="128.0" style="-fx-background-color: #f0f0f0;" text="View Catalog">
+                     <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="/All pictures/155858-200.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btnEdit_Prfile" mnemonicParsing="false" onMouseClicked="#OnClick_Edit_Prfile" onMouseEntered="#mouse_hover" onMouseExited="#mouse_exit" prefHeight="0.0" prefWidth="120.0" style="-fx-background-color: #f0f0f0;" text="Edit Profile">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="/All pictures/630729-200.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btn_Publish_New_Version" mnemonicParsing="false" onMouseClicked="#On_Click_Publish_New_Version" onMouseEntered="#mouse_hover" onMouseExited="#mouse_exit" prefHeight="30.0" prefWidth="199.0" style="-fx-background-color: #f0f0f0;" text="Publish New Version Of Map ">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="/All pictures/the_crude_version_of__location_map_134557.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btn_Edit_Map" mnemonicParsing="false" onMouseClicked="#On_Click_Edit_Map" onMouseEntered="#mouse_hover" onMouseExited="#mouse_exit" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: #f0f0f0;" text="Edit Map Content">
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="/All pictures/Maps-Map-Editing-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <TableView fx:id="addedTable" layoutX="-2.0" layoutY="473.0" prefHeight="143.0" prefWidth="850.0">
+              <columns>
+                <TableColumn fx:id="nameCol" prefWidth="118.00003051757812" text="Name" />
+                <TableColumn fx:id="typeCol" prefWidth="82.0" text="Type" />
+                  <TableColumn fx:id="descCol" prefWidth="187.0" text="Description" />
+                  <TableColumn fx:id="accCol" prefWidth="139.0" text="Disabled accessibility" />
+                  <TableColumn fx:id="timeCol" prefWidth="165.0" text="Recommended time" />
+                  <TableColumn fx:id="addressCol" prefWidth="90.0" text="Address" />
+                  <TableColumn fx:id="orderCol" prefWidth="68.0" text="Order" />
+              </columns>
+            </TableView>
+            <ImageView fitHeight="30.0" fitWidth="31.0" layoutX="806.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/All pictures/56647.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="backBtn" layoutX="11.0" layoutY="620.0" mnemonicParsing="false" onMouseClicked="#backOnClick" prefHeight="25.0" prefWidth="80.0" style="-fx-background-radius: 2EM;" text="Back" />
+            <Button fx:id="add_tour_Btn" layoutX="723.0" layoutY="432.0" mnemonicParsing="false" onMouseClicked="#Click_on_add_tour" prefHeight="25.0" prefWidth="80.0" style="-fx-background-radius: 2em;" text="Add Tour" />
+            <Button fx:id="addPlaceBtn" layoutX="91.0" layoutY="432.0" mnemonicParsing="false" onMouseClicked="#ClickOnAddPlace" prefHeight="25.0" prefWidth="80.0" style="-fx-background-radius: 2em;" text="Add Place " />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

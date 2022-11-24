@@ -1,0 +1,64 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+/* #registerBtn  {
+	-fx-effect: dropshadow( three-pass-box , #00008B , 3, 0.0 , 0 , 1 );
+	-fx-background-color:
+		linear-gradient(#00BFFF,#00008B);
+	-fx-text-fill: white;
+	-fx-background-radius: 30;	
+	-fx-background-insets: 0;	
+}
+
+
+#registerBtn:pressed   {
+	-fx-effect: dropshadow( three-pass-box , #00008B , 3, 0.0 , 0 , 1 );
+	-fx-background-color:
+		linear-gradient(#00BFFF,#00BFFF);
+	-fx-text-fill: white;
+	-fx-background-radius: 30;	
+	-fx-background-insets: 0;
+	border-color: #00008B;	
+}
+
+#loginBtn  {
+	-fx-effect: dropshadow( three-pass-box , #00008B , 3, 0.0 , 0 , 1 );
+	-fx-background-color:
+		linear-gradient(#00BFFF,#00008B);
+	-fx-text-fill: white;
+	-fx-background-radius: 30;	
+	-fx-background-insets: 0;	
+}
+
+
+#loginBtn:pressed  {
+	-fx-effect: dropshadow( three-pass-box , #00008B , 3, 0.0 , 0 , 1 );
+	-fx-background-color:
+		linear-gradient(#00BFFF,#00BFFF);
+	-fx-text-fill: white;
+	-fx-background-radius: 30;	
+	-fx-background-insets: 0;
+	border-color: #00008B;	
+}
+
+#forgorPassBtn  {
+	-fx-effect: dropshadow( three-pass-box , #00008B , 3, 0.0 , 0 , 1 );
+	-fx-background-color:
+		linear-gradient(#00BFFF,#00008B);
+	-fx-text-fill: white;
+	-fx-background-radius: 30;	
+	-fx-background-insets: 0;	
+}
+
+
+#forgorPassBtn:pressed   {
+	-fx-effect: dropshadow( three-pass-box , #00008B , 3, 0.0 , 0 , 1 );
+	-fx-background-color:
+		linear-gradient(#00BFFF,#00BFFF);
+	-fx-text-fill: white;
+	-fx-background-radius: 30;	
+	-fx-background-insets: 0;
+	border-color: #00008B;	
+}
+
+*/
+

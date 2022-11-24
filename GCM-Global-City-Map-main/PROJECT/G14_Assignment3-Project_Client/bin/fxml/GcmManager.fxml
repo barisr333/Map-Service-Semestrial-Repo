@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox minHeight="611.0" minWidth="789.0" prefHeight="611.0" prefWidth="797.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiControllers.GcmManagerController">
+   <children>
+      <AnchorPane prefHeight="611.0" prefWidth="793.0">
+         <children>
+            <ImageView fitHeight="611.0" fitWidth="1020.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/All pictures/rsz_whatsapp_image_2019-05-04_at_154206.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="268.0" layoutY="10.0" prefHeight="56.0" prefWidth="287.0" text="Global City Map System" textFill="#0006b5">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Pane layoutX="3.0" layoutY="83.0" prefHeight="523.0" prefWidth="791.0">
+               <children>
+                  <Label layoutX="9.0" layoutY="3.0" prefHeight="56.0" prefWidth="253.0" text="Gcm Manager" textFill="#0006b5">
+                     <font>
+                        <Font name="Bell MT Bold" size="23.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="603.0" layoutY="-1.0" orientation="VERTICAL" prefHeight="488.0" prefWidth="11.0" />
+                  <ImageView fitHeight="143.0" fitWidth="134.0" layoutX="11.0" layoutY="105.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/All pictures/69636.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="229.0" fitWidth="142.0" layoutX="632.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/All pictures/tumblr_ol6bixlK2U1tvd7rmo3_400.gif" />
+                     </image>
+                  </ImageView>
+                  <HBox alignment="CENTER_LEFT" layoutX="219.0" layoutY="46.0" prefHeight="106.0" prefWidth="190.0" style="-fx-background-color: #f0f0f0; -fx-border-color: black;">
+                     <children>
+                        <Button fx:id="btnView_Catalg1" mnemonicParsing="false" onMouseClicked="#OnClick_View_Catalg" onMouseEntered="#mouse_hover" onMouseExited="#mouse_exit" prefHeight="102.0" prefWidth="196.0" style="-fx-background-color: #f0f0f0;" text="View Catalog">
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="/All pictures/155858-200.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <HBox.margin>
+                              <Insets right="5.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="415.0" layoutY="46.0" prefHeight="106.0" prefWidth="190.0" style="-fx-background-color: #f0f0f0; -fx-border-color: black;">
+                     <children>
+                        <Button fx:id="btnEdit_Prfile1" mnemonicParsing="false" onMouseClicked="#OnClick_Edit_Prfile" onMouseEntered="#mouse_hover" onMouseExited="#mouse_exit" prefHeight="98.0" prefWidth="188.0" style="-fx-background-color: #f0f0f0;" text="Edit Profile">
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="/All pictures/630729-200.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="219.0" layoutY="155.0" prefHeight="106.0" prefWidth="190.0" style="-fx-background-color: #f0f0f0; -fx-border-color: black;">
+                     <children>
+                        <Button fx:id="btn_Publish_New_Version" mnemonicParsing="false" onMouseClicked="#On_Click_Publish_New_Version" onMouseEntered="#mouse_hover" onMouseExited="#mouse_exit" prefHeight="97.0" prefWidth="188.0" style="-fx-background-color: #f0f0f0;" text="Update requests">
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="/All pictures/the_crude_version_of__location_map_134557.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="219.0" layoutY="263.0" prefHeight="106.0" prefWidth="190.0" style="-fx-background-color: #f0f0f0; -fx-border-color: black;">
+                     <children>
+                        <Button fx:id="btn_Update_map_rates" mnemonicParsing="false" onMouseClicked="#On_Click_Update_map_rates" onMouseEntered="#mouse_hover" onMouseExited="#mouse_exit" prefHeight="98.0" prefWidth="187.0" style="-fx-background-color: #f0f0f0;" text="Update map rates">
+                           <graphic>
+                              <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="/All pictures/111111.jpg" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="415.0" layoutY="155.0" prefHeight="106.0" prefWidth="190.0" style="-fx-background-color: #f0f0f0; -fx-border-color: black;">
+                     <children>
+                        <Button fx:id="btn_Edit_Map" mnemonicParsing="false" onMouseClicked="#On_Click_Edit_Map" onMouseEntered="#mouse_hover" onMouseExited="#mouse_exit" prefHeight="101.0" prefWidth="188.0" style="-fx-background-color: #f0f0f0;" text="Manage GCM content">
+                           <graphic>
+                              <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="/All pictures/Maps-Map-Editing-icon.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="415.0" layoutY="263.0" prefHeight="106.0" prefWidth="190.0" style="-fx-background-color: #f0f0f0; -fx-border-color: black;">
+                     <children>
+                        <Button fx:id="btn_Managment_client_info" mnemonicParsing="false" onMouseClicked="#On_Click_Managment_client_info" onMouseEntered="#mouse_hover" onMouseExited="#mouse_exit" prefHeight="96.0" prefWidth="218.0" style="-fx-background-color: #f0f0f0;" text="Manage client info">
+                           <graphic>
+                              <ImageView fitHeight="30.0" fitWidth="35.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="/All pictures/client-management.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="219.0" layoutY="372.0" prefHeight="106.0" prefWidth="190.0" style="-fx-background-color: #f0f0f0; -fx-border-color: black;">
+                     <children>
+                        <Button fx:id="btn_View_Report" mnemonicParsing="false" onMouseClicked="#On_Click_View_Report" onMouseEntered="#mouse_hover" onMouseExited="#mouse_exit" prefHeight="98.0" prefWidth="217.0" style="-fx-background-color: #f0f0f0;" text="View Report">
+                           <graphic>
+                              <ImageView fitHeight="35.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="/All pictures/614f38cb9c.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+                  <Separator layoutX="-11.0" layoutY="469.0" prefHeight="38.0" prefWidth="806.0" />
+                  <Label fx:id="user_name" layoutX="12.0" layoutY="59.0" text="user_name" textFill="#cd0909">
+                     <font>
+                        <Font name="Bell MT Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="-2.0" layoutY="486.0" prefHeight="2.0" prefWidth="797.0" style="-fx-background-color: #000000;" />
+                  <Separator layoutX="366.0" layoutY="244.0" prefHeight="3.0" prefWidth="485.0" rotate="90.0" style="-fx-background-color: #000000;" />
+               </children>
+            </Pane>
+            <ImageView fitHeight="44.0" fitWidth="149.0" layoutX="643.0" layoutY="17.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/All pictures/rsz_gcm_logo_lightbg.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="logout" layoutX="5.0" layoutY="577.0" mnemonicParsing="false" onMouseClicked="#logoutOnClick" prefHeight="25.0" prefWidth="80.0" style="-fx-background-radius: 2em;" text="Log out" />
+            <Separator layoutX="1.0" layoutY="65.0" prefHeight="38.0" prefWidth="791.0" />
+            <Separator layoutY="82.0" prefHeight="3.0" prefWidth="797.0" style="-fx-background-color: #000000;" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

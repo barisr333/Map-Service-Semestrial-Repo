@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="350.0" prefWidth="550.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiControllers.loadingMainWindowController">
+   <children>
+      <AnchorPane fx:id="anchorPane" prefHeight="350.0" prefWidth="550.0">
+         <children>
+            <ImageView fitHeight="350.0" fitWidth="550.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/All pictures/rsz_dsc100198859.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutY="328.0" text="©GCM 2019" textFill="WHITE" />
+            <Label layoutX="490.0" layoutY="6.0" text="Version 1.1" textFill="WHITE" />
+            <Label layoutX="77.0" layoutY="87.0" text="Global city map system" textFill="WHITE">
+               <font>
+                  <Font name="Bell MT Bold" size="40.0" />
+               </font>
+            </Label>
+            <ProgressBar fx:id="progressBar" layoutX="78.0" layoutY="238.0" prefWidth="400.0" progress="0.0">
+               <effect>
+                  <DropShadow blurType="ONE_PASS_BOX" color="#00a6ff" />
+               </effect></ProgressBar>
+            <Label fx:id="label" layoutX="79.0" layoutY="217.0" text="Loading" textFill="WHITE" />
+            <Label fx:id="loadingInfo" layoutX="444.0" layoutY="258.0" text="Label" textFill="WHITE" />
+            <Label layoutX="392.0" layoutY="135.0" text="Client version 1.1" textFill="WHITE" />
+            <Label fx:id="presentInfolbl" layoutX="78.0" layoutY="258.0" text="Label" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

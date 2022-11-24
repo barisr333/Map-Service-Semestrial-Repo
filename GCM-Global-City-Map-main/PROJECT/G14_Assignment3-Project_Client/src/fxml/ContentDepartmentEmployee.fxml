@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox prefHeight="650.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiControllers.ContentDepartmentEmployee">
+   <children>
+      <AnchorPane prefHeight="600.0" prefWidth="850.0">
+         <children>
+            <ImageView fitHeight="650.0" fitWidth="850.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/All pictures/rsz_whatsapp_image_2019-05-04_at_154206.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="283.0" layoutY="1.0" prefHeight="56.0" prefWidth="287.0" text="Global City Map System" textFill="#0006b5">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Pane layoutX="1.0" layoutY="77.0" prefHeight="322.0" prefWidth="781.0">
+               <children>
+                  <Label layoutX="3.0" layoutY="36.0" prefHeight="44.0" prefWidth="391.0" text="Content Department Employee" textFill="#0006b5">
+                     <font>
+                        <Font name="Bell MT Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="101.0" fitWidth="103.0" layoutX="6.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/All pictures/51-512.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="263.0" fitWidth="211.0" layoutX="568.0" layoutY="111.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/All pictures/tumblr_ol6bixlK2U1tvd7rmo3_400.gif" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="username" layoutX="4.0" layoutY="67.0" prefHeight="44.0" prefWidth="391.0" text="username" textFill="#cd0909">
+                     <font>
+                        <Font name="Bell MT Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="225.0" layoutY="274.0" prefHeight="3.0" prefWidth="501.0" rotate="90.0" style="-fx-background-color: #000000;" />
+               </children>
+            </Pane>
+            <ImageView fitHeight="44.0" fitWidth="149.0" layoutX="703.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/All pictures/rsz_gcm_logo_lightbg.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="logout" layoutX="5.0" layoutY="615.0" mnemonicParsing="false" onMouseClicked="#logoutOnClick" prefHeight="25.0" prefWidth="80.0" style="-fx-background-radius: 2em;" text="Log out" />
+            <HBox alignment="CENTER_LEFT" layoutX="-1.0" layoutY="66.0" prefHeight="38.0" prefWidth="847.0" style="-fx-background-color: #f0f0f0; -fx-border-color: black;">
+               <children>
+                  <Button fx:id="btnView_Catalg" mnemonicParsing="false" onMouseClicked="#OnClick_View_Catalg" onMouseEntered="#mouse_hover" onMouseExited="#mouse_exit" prefHeight="0.0" prefWidth="128.0" style="-fx-background-color: #f0f0f0;" text="View Catalog">
+                     <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="/All pictures/155858-200.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btnEdit_Prfile" mnemonicParsing="false" onMouseClicked="#OnClick_Edit_Prfile" onMouseEntered="#mouse_hover" onMouseExited="#mouse_exit" prefHeight="0.0" prefWidth="120.0" style="-fx-background-color: #f0f0f0;" text="Edit Profile">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="/All pictures/630729-200.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btn_Publish_New_Version" mnemonicParsing="false" onMouseClicked="#On_Click_Publish_New_Version" onMouseEntered="#mouse_hover" onMouseExited="#mouse_exit" prefHeight="30.0" prefWidth="199.0" style="-fx-background-color: #f0f0f0;" text="Employee card">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="/All pictures/forms.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btn_Edit_Map" mnemonicParsing="false" onMouseClicked="#On_Click_Edit_Map" onMouseEntered="#mouse_hover" onMouseExited="#mouse_exit" prefHeight="25.0" prefWidth="169.0" style="-fx-background-color: #f0f0f0;" text="Manage GCM content">
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="/All pictures/Maps-Map-Editing-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <Separator layoutY="602.0" prefHeight="3.0" prefWidth="850.0" style="-fx-background-color: #000000;" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

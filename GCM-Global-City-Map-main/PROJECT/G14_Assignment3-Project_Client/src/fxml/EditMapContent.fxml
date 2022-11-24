@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="guiControllers.EditMapContent">
+   <children>
+      <AnchorPane fx:id="anchorPane" prefHeight="600.0" prefWidth="800.0">
+         <children>
+            <ImageView fitHeight="650.0" fitWidth="865.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/All pictures/rsz_whatsapp_image_2019-05-04_at_154206.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="283.0" layoutY="1.0" prefHeight="56.0" prefWidth="287.0" text="Global City Map System" textFill="#0006b5">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Pane layoutX="1.0" layoutY="77.0" prefHeight="322.0" prefWidth="781.0">
+               <children>
+                  <Label layoutX="3.0" layoutY="33.0" prefHeight="38.0" prefWidth="235.0" text="Manage GCM content" textFill="#0006b5">
+                     <font>
+                        <Font name="Bell MT Bold" size="21.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="image_gcm_content" fitHeight="101.0" fitWidth="108.0" layoutX="6.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="/All pictures/9d088af39c.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="219.0" fitWidth="372.0" layoutX="486.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/All pictures/location-graphic.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="Btn_Edit_tour_to_city" layoutX="238.0" layoutY="289.0" mnemonicParsing="false" onMouseClicked="#OnKlick_Edit_tour_to_city" prefHeight="25.0" prefWidth="175.0" style="-fx-background-radius: 2em;" text="Edit/delete tours" />
+                  <Button fx:id="Btn_Add_new_tour_to_city" layoutX="33.0" layoutY="289.0" mnemonicParsing="false" onMouseClicked="#OnKlick_Add_new_tour_to_city" prefHeight="25.0" prefWidth="175.0" style="-fx-background-radius: 2em;" text="Create new tour" />
+                  <ImageView fx:id="image_content_emp" fitHeight="101.0" fitWidth="108.0" layoutX="6.0" layoutY="84.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="/All pictures/51-512.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="gcm_manager" fitHeight="101.0" fitWidth="108.0" layoutX="6.0" layoutY="85.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="/All pictures/69636.png" />
+                     </image>
+                  </ImageView>
+                  <Separator layoutX="-1.0" layoutY="16.0" prefHeight="3.0" prefWidth="850.0" style="-fx-background-color: #000000;" />
+                  <Separator layoutY="212.0" prefHeight="3.0" prefWidth="428.0" style="-fx-background-color: #000000;" />
+                  <Label layoutX="33.0" layoutY="224.0" prefHeight="38.0" prefWidth="251.0" text="Tours" textFill="#b21300">
+                     <font>
+                        <Font name="Bell MT Bold" size="19.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <ImageView fitHeight="44.0" fitWidth="149.0" layoutX="707.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="/All pictures/rsz_gcm_logo_lightbg.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="backBtn" layoutX="5.0" layoutY="619.0" mnemonicParsing="false" onMouseClicked="#backOnClick" prefHeight="25.0" prefWidth="80.0" style="-fx-background-radius: 2em;" text="Back" />
+            <Button fx:id="Btn_Add_interested_place" layoutX="32.0" layoutY="529.0" mnemonicParsing="false" onMouseClicked="#OnKlick_Add_interested_place" prefHeight="25.0" prefWidth="175.0" style="-fx-background-radius: 2em;" text="Create/add places of interest" />
+            <Button fx:id="Btn_Delete_interested_place" layoutX="32.0" layoutY="573.0" mnemonicParsing="false" onMouseClicked="#OnKlick_Delete_interested_place" prefHeight="25.0" prefWidth="175.0" style="-fx-background-radius: 2em;" text="Delete places of interest" />
+            <Separator layoutX="1.0" layoutY="609.0" prefHeight="3.0" prefWidth="847.0" style="-fx-background-color: #000000;" />
+            <Separator layoutX="173.0" layoutY="352.0" prefHeight="3.0" prefWidth="515.0" rotate="90.0" style="-fx-background-color: #000000;" />
+            <HBox fx:id="TabMenu" alignment="CENTER_LEFT" layoutY="72.0" prefHeight="38.0" prefWidth="850.0" style="-fx-background-color: #f0f0f0; -fx-border-color: black;" visible="false">
+               <children>
+                  <Button fx:id="btnView_Catalg" mnemonicParsing="false" onMouseClicked="#OnClick_View_Catalg" onMouseEntered="#mouse_hover" onMouseExited="#mouse_exit" prefHeight="0.0" prefWidth="128.0" style="-fx-background-color: #f0f0f0;" text="View Catalog">
+                     <graphic>
+                        <ImageView fitHeight="26.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="/All pictures/155858-200.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="btnEdit_Prfile" mnemonicParsing="false" onMouseClicked="#OnClick_Edit_Prfile" onMouseEntered="#mouse_hover" onMouseExited="#mouse_exit" prefHeight="0.0" prefWidth="120.0" style="-fx-background-color: #f0f0f0;" text="Edit Profile">
+                     <graphic>
+                        <ImageView fitHeight="22.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="/All pictures/630729-200.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btn_Edit_Map" mnemonicParsing="false" onMouseClicked="#On_Click_Edit_Map" onMouseEntered="#mouse_hover" onMouseExited="#mouse_exit" prefHeight="25.0" prefWidth="136.0" style="-fx-background-color: #f0f0f0;" text="Edit Map Content">
+                     <graphic>
+                        <ImageView fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="/All pictures/Maps-Map-Editing-icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <Button fx:id="Btn_Edit_interested_place" layoutX="237.0" layoutY="529.0" mnemonicParsing="false" onMouseClicked="#OnKlick_Edit_interested_place" prefHeight="25.0" prefWidth="175.0" style="-fx-background-radius: 2em;" text="Edit places of interest" />
+            <Separator layoutY="443.0" prefHeight="3.0" prefWidth="428.0" style="-fx-background-color: #000000;" />
+            <Label layoutX="32.0" layoutY="460.0" prefHeight="38.0" prefWidth="251.0" text="Places of interest" textFill="#b21300">
+               <font>
+                  <Font name="Bell MT Bold" size="19.0" />
+               </font>
+            </Label>
+            <Separator layoutX="411.0" layoutY="443.0" prefHeight="3.0" prefWidth="438.0" style="-fx-background-color: #000000;" />
+            <Label layoutX="456.0" layoutY="463.0" prefHeight="38.0" prefWidth="251.0" text="Cities and maps" textFill="#b21300">
+               <font>
+                  <Font name="Bell MT Bold" size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="Btn_Create_new_city" layoutX="456.0" layoutY="529.0" mnemonicParsing="false" onMouseClicked="#OnClick_Create_New_city" prefHeight="25.0" prefWidth="175.0" style="-fx-background-radius: 2em;" text="Create new city" />
+            <Button fx:id="Btn_Add_new_map_to_city" layoutX="657.0" layoutY="529.0" minHeight="25.0" minWidth="175.0" mnemonicParsing="false" onMouseClicked="#OnKlick_Add_new_map_to_city" style="-fx-background-radius: 2em;" text="Add new map to city" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
